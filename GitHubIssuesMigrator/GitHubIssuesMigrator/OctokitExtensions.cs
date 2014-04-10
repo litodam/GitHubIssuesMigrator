@@ -12,6 +12,7 @@
             newIssue.Body = issue.Body;
             issue.Labels.Select(i => i.Name).ToList().ForEach(n => newIssue.Labels.Add(n));
 
+            // issue.Comments.Select(c => c.).ToList().ForEach(n => newIssue.Labels.Add(n));
             return newIssue;
         }
 
